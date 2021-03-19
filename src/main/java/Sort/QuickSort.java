@@ -1,6 +1,7 @@
 package Sort;
 
-import static Sort.SortUtils.printArr;
+import java.util.Arrays;
+
 
 public class QuickSort {
     public static void sort(int[] arr) {
@@ -51,7 +52,7 @@ public class QuickSort {
     public static void main(String[] args) {
         QuickSort quickSort = new QuickSort();
         int[] nums = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        quickSort.sort(nums);
-        printArr(nums);
+        sort(nums);
+        System.out.println(Arrays.toString(nums));
     }
 }
